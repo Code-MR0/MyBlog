@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class OssConfig {
 	private String endpoint = "https://oss-cn-beijing.aliyuncs.com";
-	private String accessKeyId = "LTAI5tE9oVAjJ1w4RAGdbjhB";
-	private String secretAccessKey = "BbeOWpeAFzvC5UAl8tedaOfVYeqAzR";
+	private String accessKeyId = "";
+	private String secretAccessKey = "";
 	private String bucketName = "mhw-oss";
 	private String urlPrefix = "https://mhw-oss.oss-cn-beijing.aliyuncs.com/";
 

@@ -1,0 +1,230 @@
+.body-me {
+    background-color: #e9f0f5 !important;
+}
+
+.m-body {
+    background: url("../images/background.jpg") fixed;
+    background-size: cover;
+}
+
+.m-container {
+    max-width: 56em !important;
+    margin: auto !important;
+}
+
+.m-container {
+    max-width: 62em !important;
+    margin: auto !important;
+}
+
+/*padding*/
+.m-padded-tb-mini-s {
+    padding-top: 0.15em !important;
+    padding-bottom: 0.15em !important;
+}
+
+.m-padded-tb-mini {
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+}
+
+.m-padded-tb-tiny {
+    padding-top: 0.3em !important;
+    padding-bottom: 0.3em !important;
+}
+
+.m-padded-tb-small {
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+
+.m-padded-tb {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+
+.m-padded-tb-large {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+}
+
+.m-padded-tb-big {
+    padding-top: 2.5em !important;
+    padding-bottom: 2.5em !important;
+}
+
+.m-padded-top-big {
+    padding-top: 2.5em !important;
+}
+
+.m-padded-tb-huge {
+    padding-top: 4em !important;
+    padding-bottom: 4em !important;
+}
+
+.m-padded-tb-massive {
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
+}
+
+/*margin*/
+.m-margin-bottom-small {
+    margin-bottom: 0.5em !important;
+
+}
+
+.m-margin {
+    margin: 0 !important;
+}
+
+/*position*/
+.m-fixed {
+    position: fixed !important;
+    z-index: 1 !important;
+}
+
+/*opacity*/
+.m-opacity-mini {
+    opacity: 0.9 !important;
+}
+
+/*text*/
+.m-text {
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.8;
+}
+
+.m-input-op {
+    background-color: transparent !important;
+}
+
+.m-text-tb-c {
+    color: #333333 !important;
+    font-weight: bolder;
+}
+
+.m-text-thin {
+    font-weight: 300 !important;
+}
+
+.m-text-spaced {
+    letter-spacing: 1px !important;
+}
+
+.m-text-lined {
+    line-height: 1.8;
+}
+
+/*article*/
+.m-article {
+    font-size: 16px;
+    padding: 10px 8px;
+    line-height: 2em;
+    color: #565a5f;
+}
+
+.post-copyright {
+    margin: 58px 0 30px;
+    padding: 0.5em 1em;
+    border-left: 3px solid #ff1700;
+    background-color: #f9f9f9;
+    list-style: none;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.m-article-title {
+    font-size: 24px !important;
+    color: #7f7f7f !important;
+}
+
+/*超链接*/
+.m-link {
+    text-decoration: none !important;
+    color: #777c83 !important;
+    margin-left: 0 !important;
+    margin-right: 5px !important;
+}
+
+.m-link:hover {
+    color: #72b7ea !important;
+}
+
+.m-i-color {
+    color: #777c83 !important;;
+}
+
+.m-logo-color {
+    color: #0e90d2 !important;
+}
+
+/*user*/
+.m-user-name {
+    font-weight: 600;
+    text-align: left;
+    color: #565a5f;
+    margin-top: 0px;
+}
+
+.m-right-top {
+    position: absolute;
+    top: 0;
+    right: 2%;
+}
+
+.m-right-bottom {
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
+.m-mobile-show {
+    display: none !important;
+}
+
+.m-shadow-bottom-small {
+    -webkit-box-shadow: 0 -4px 8px rgba(223, 222, 222) !important;
+    box-shadow: 0 -4px 8px rgba(223, 222, 222) !important;
+}
+
+.m-shadow-top-small {
+    -webkit-box-shadow: 0 4px 8px rgba(223, 222, 222) !important;
+    box-shadow: 0 4px 8px rgba(223, 222, 222) !important;
+}
+
+@media screen and (max-width: 768px) {
+    .m-mobile-hide {
+        display: none !important;
+    }
+
+    .m-mobile-show {
+        display: block !important;
+    }
+
+    .m-padded-lr-responsive {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .m-mobile-lr-clear {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .m-mobile-wide {
+        width: 100% !important;
+    }
+
+    .m-opacity-mini {
+        opacity: 1 !important;
+    }
+
+    .m-padded-r {
+        padding-right: 0 !important;
+    }
+
+    .m-padded-tb-tiny-new {
+        padding-top: 0.3em !important;
+        padding-bottom: 0.3em !important;
+    }
+}

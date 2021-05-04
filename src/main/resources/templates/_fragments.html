@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<!--head-->
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title th:replace="${title}"></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/mystyle.css" th:href="@{/css/mystyle.css}">
+    <link rel="stylesheet" href="lib/editormd/css/editormd.css" th:href="@{/lib/editormd/css/editormd.css}"/>
+    <link rel="stylesheet" href="css/github-markdown.css" th:href="@{/css/github-markdown.css}"/>
+    <link rel="stylesheet" href="css/zoomify.min.css" th:href="@{/css/zoomify.min.css}"/>
+</head>
+<body>
+<!--头部导航栏-->
+<nav class="ui basic segment attached m-padded-tb-mini-s m-shadow-top-small" th:fragment="nav">
+    <div class="ui  container">
+        <div class="ui secondary stackable menu" style="margin: 0">
+            <h2 class="ui header item" style="color: #4cc7e1">崇明鸟</h2>
+            <a href="/index" class="i-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+            <a href="/archives" class="i-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+            <a href="/categories" class="i-item item m-mobile-hide"><i class="th icon"></i>分类</a>
+            <a href="/friends" class="i-item item m-mobile-hide"><i class="handshake icon"></i>友链</a>
+            <a href="/about" class="i-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+            <div class="right i-item item m-mobile-hide">
+                <div class="ui search">
+                    <div class="ui icon input">
+                        <input class="prompt" type="text" placeholder="Search...">
+                        <i class="search icon"></i>
+                    </div>
+                    <div class="results"></div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu basic toggle icon button m-right-top m-mobile-show">
+            <i class="bars icon"></i>
+        </a>
+    </div>
+</nav>
+<div class="ui modal" id="weChatImg">
+    <div class="ui medium image">
+        <img src="" th:src="@{/images/wechat.png}" alt="">
+    </div>
+</div>
+<!--底部网站和个人信息-->
+<footer class="ui basic segment vertical m-shadow-bottom-small" th:fragment="footer">
+    <div class="ui container two column stackable grid">
+        <div class="column aligned" style="display:flex;align-items:center;">
+            <div style="margin: 0 auto">
+                <a class="ui circular facebook icon button" href="https://github.com/Code-MR0">
+                    <i class="github icon"></i>
+                </a>
+                <a class="ui circular twitter icon button" href="https://wpa.qq.com/msgrd?v=3&uin=1132493269&site=qq&menu=yes">
+                    <i class="qq icon"></i>
+                </a>
+                <a class="ui circular linkedin icon button" id="weChatA">
+                    <i class="wechat icon"></i>
+                </a>
+                <a class="ui circular google plus icon button" href="mailto:1132493269@qq.com">
+                    <i class="mail plus icon"></i>
+                </a>
+            </div>
+        </div>
+        <div class="column center aligned">
+            <div class="column center aligned">
+                <div style="color: #4facfe" class="m-padded-tb-tiny">
+                    Copyright © 2020-2021 <i class="coffee icon"></i>马洪伟
+                </div>
+                <div style="color: #4facfe" class="m-padded-tb-tiny">
+                    <a href="https://beian.miit.gov.cn" style="color: #4facfe">蜀ICP备2021008899号</a>
+                </div>
+            </div>
+<!--            <div class="column center aligned m-padded-tb-tiny">-->
+<!--                <div class="mini ui buttons m-padded-tb-tiny-new">-->
+<!--                    <button class="mini ui grey button">运行</button>-->
+<!--                    <button class="mini ui pink button">11天19小时</button>-->
+<!--                </div>-->
+<!--                <div class="mini ui buttons m-padded-tb-tiny-new">-->
+<!--                    <button class="mini ui grey button">总访客数</button>-->
+<!--                    <button class="mini ui orange button">12355</button>-->
+<!--                </div>-->
+<!--                <div class="mini ui buttons m-padded-tb-tiny-new">-->
+<!--                    <button class="mini ui grey button">总访问量</button>-->
+<!--                    <button class="mini ui green button">123555</button>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </div>
+</footer>
+<th:block th:fragment="script">
+    <script src="../static/js/jquery-3.2.1.min.js" th:src="@{/js/jquery-3.2.1.min.js}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="../static/js/background-canvas-nest.js" th:src="@{/js/background-canvas-nest.js}"></script>
+    <script src="lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
+    <script src="js/uploadImg.js" th:src="@{/js/uploadImg.js}"></script>
+    <script src="js/zoomify.min.js" th:src="@{/js/zoomify.min.js}"></script>
+    <script src="js/jquery.scrollTo.js" th:src="@{/js/jquery.scrollTo.js}"></script>
+    <script src="js/reply.js" th:src="@{/js/reply.js}"></script>
+    <script>
+        /*移动端展开导航*/
+        $('.menu.toggle').click(function () {
+            $('.i-item').toggleClass('m-mobile-hide');
+        });
+        $('.ui.checkbox')
+            .checkbox()
+        ;
+        $('.ui.search')
+            .search({
+                type: 'category',
+                minCharacters: 2,
+                apiSettings: {
+                    onResponse: function (re) {
+                        var
+                            response = {
+                                results: {}
+                            }
+                        ;
+                        // translate GitHub API response to work with search
+                        $.each(re.items, function (index, item) {
+                            var
+                                category = item.category || 'Unknown',
+                                maxResults = 8
+                            ;
+                            if (index >= maxResults) {
+                                return false;
+                            }
+                            // create new language category
+                            if (response.results[category] === undefined) {
+                                response.results[category] = {
+                                    name: category,
+                                    results: []
+                                };
+                            }
+                            // add result to category
+                            item.id = item.id+"";
+                            item.views = item.views+"";
+                            item.id = item.id.substring(0,16)+item.views;
+                            response.results[category].results.push({
+                                title: item.title,
+                                description: item.description,
+                                url: "/blog/" + item.id
+                            });
+                        });
+                        return response;
+                    },
+                    url: '/findByText?text={query}'
+                }
+            });
+    </script>
+</th:block>
+</body>
+</html>

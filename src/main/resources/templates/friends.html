@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<!--引入公共head-->
+<head th:replace="_fragments::head(~{::title})">
+    <meta charset="UTF-8">
+    <title>崇明鸟|友链</title>
+</head>
+<body class="body-me">
+<!--引入公共头部导航栏-->
+<nav th:replace="_fragments::nav"></nav>
+<!--中间内容-->
+<div class="m-padded-tb-big ui container">
+    <div class="ui link cards three column doubling stackable grid">
+        <div class="column" th:each="dalao:${friendsList1}">
+            <div class="ui fluid card centered " style="width: 89% !important;">
+                <a class="ui left teal corner label">
+                    <i class="heart red icon"></i>
+                </a>
+                <div class="content">
+                    <div class="center aligned header" th:text="${dalao.name}">Jenny Hess</div>
+                    <div class="center aligned description">
+                        <p th:text="${dalao.description}">Jenny是一名在该新学校学习媒体管理的在校生。</p>
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="center aligned author">
+                        <a th:href="${dalao.address}">
+                            <img class="ui avatar image" th:src="${dalao.icon}">
+                            <span th:text="${dalao.name}"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui horizontal divider">
+        大佬博客<i class="hand point up outline icon"></i>AND<i class="hand point down outline icon"></i>友链
+    </div>
+    <div class="ui link cards three column doubling stackable grid">
+        <div class="column" th:each="friend:${friendsList2}">
+            <div class="ui fluid card centered " style="width: 89% !important;">
+                <div class="content">
+                    <div class="center aligned header" th:text="${friend.name}">Jenny Hess</div>
+                    <div class="center aligned description">
+                        <p th:text="${friend.description}">Jenny是一名在该新学校学习媒体管理的在校生。</p>
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="center aligned author">
+                        <a th:href="${friend.address}">
+                            <img class="ui avatar image" th:src="${friend.icon}">
+                            <span th:text="${friend.name}"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui horizontal divider">
+        关于友链交换相关
+    </div>
+    <div class="ui attached message">
+        <ul class="post-copyright">
+            <li><strong>友链须知：</strong><span>本人会长期清理无法访问的链接，请保证自己的链接长期有效。</span></li>
+            <li><strong>友链申请：</strong><span>留言评论或发送邮件给我即可~( •̆ ᵕ •̆ )◞ ❤</span></li>
+            <li><strong>我的信息：</strong>
+                <span>
+                    <ul>
+                        <li><strong>name：</strong><span>八归少年</span></li>
+                        <li><strong>icon：</strong><span>https://www.yanghujun.com</span></li>
+                        <li><strong>adress：</strong><span>https://www.yanghujun.com</span></li>
+                        <li><strong>desc：</strong><span>技术改变生活</span></li>
+                    </ul>
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--引入公共底部内容-->
+<footer th:replace="_fragments::footer"></footer>
+<!--引入公共JavaScript-->
+<!--/*/<th:block th:replace="_fragments::script">/*/-->
+<!--/*/</th:block>/*/-->
+</body>
+</html>

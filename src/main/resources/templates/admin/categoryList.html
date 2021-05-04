@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<!--引入公共head-->
+<head th:replace="_fragments::head(~{::title})">
+    <meta charset="UTF-8">
+    <title>崇明鸟|分类列表</title>
+</head>
+<body class="body-me">
+<!--引入公共头部导航栏-->
+<nav th:replace="_adminFragments::admin"></nav>
+<!--中间内容-->
+<div class="m-padded-tb-big ui container">
+    <!--文章搜索-->
+    <form action="/admin/categoryList" class="ui basic segment form" method="get" style="padding: 0">
+        <div class="inline fields m-margin">
+            <div class="field m-padded-tb-mini m-mobile-wide m-padded-r">
+                <input type="text" name="name" placeholder="分类名称" class="m-mobile-wide" th:value="${name}">
+            </div>
+            <div class="field m-padded-tb-mini m-mobile-wide m-padded-r">
+                <button class="ui primary basic button m-mobile-wide" type="submit">
+                    <i class="search link icon"></i>搜索
+                </button>
+            </div>
+            <div class="field m-padded-tb-mini m-mobile-wide m-padded-r">
+                <button class="ui teal basic button m-mobile-wide" type="button" onclick="addShow()">
+                    <i class="add link icon"></i>新增
+                </button>
+            </div>
+        </div>
+    </form>
+    <!--文章列表-->
+    <div>
+        <table class="ui striped table m-opacity-mini">
+            <thead>
+            <tr>
+                <th class="three wide">编号</th>
+                <th class="two wide">封面</th>
+                <th class="three wide">名称</th>
+                <th class="three wide">更新时间</th>
+                <th class="one wide">推荐</th>
+                <th class="one wide">文章数</th>
+                <th class="three wide">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="category : ${categoryList}">
+                <td data-label="id" th:text="${category.id}"></td>
+                <td data-label="img"><img src="" alt="" th:src="${category.img}" class="ui mini rounded image"></td>
+                <td data-label="name" th:text="${category.name}"></td>
+                <td data-label="updateDate" th:text="${#dates.format(category.updateDate,'yyyy-MM-dd')}"></td>
+                <td data-label="recommend" th:text="${category.recommend}? '是' : '否'"></td>
+                <td data-label="num" th:text="${category.num}"></td>
+                <td data-label="do">
+                    <button onclick="editorShow(this)" class="ui tiny primary button m-mobile-wide">
+                        <i class="edit link icon"></i>编辑
+                    </button>
+                    <button onclick="deleteShow(this)" class="ui tiny button m-mobile-wide">
+                        <i class="delete link icon"></i>删除
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--分页按钮-->
+    <div class="ui container column center aligned m-padded-tb">
+        <a class="circular ui basic icon button"
+           th:style="${pn}-1<1?'display: none':''"
+           th:href="@{/admin/categoryList?pn={pn}&name={name}(pn=${pn}-1,name=${name})}">
+            <i class="icon angle left"></i>
+        </a>
+        <a class="circular ui basic icon button"
+           th:text="${pn}-1"
+           th:style="${pn}-1<1?'display: none':''"
+           th:href="@{/admin/categoryList?pn={pn}&name={name}(pn=${pn}-1,name=${name})}">
+        </a>
+        <a class="circular ui icon button"
+           th:text="${pn}"
+           th:href="@{/admin/categoryList?pn={pn}&name={name}(pn=${pn},name=${name})}">
+        </a>
+        <a class="circular ui basic icon button"
+           th:text="${pn}+1"
+           th:style="${pn}+1>${pages}?'display: none':''"
+           th:href="@{/admin/categoryList?pn={pn}&name={name}(pn=${pn}+1,name=${name})}">
+        </a>
+        <a class="circular ui basic icon button"
+           th:style="${pn}+1>${pages}?'display: none':''"
+           th:href="@{/admin/categoryList?pn={pn}&name={name}(pn=${pn}+1,name=${name})}">
+            <i class="icon angle right"></i>
+        </a>
+    </div>
+</div>
+<!--弹出层 删除-->
+<div class="ui mini modal" id="delete">
+    <div class="header">删除你的分类</div>
+    <div class="content">
+        <p>你确定删除你的分类吗</p>
+    </div>
+    <div class="actions">
+        <div class="ui negative button">否</div>
+        <div class="ui positive right labeled icon ok button">Yes <i class="checkmark icon"></i></div>
+    </div>
+</div>
+<!--弹出层 编辑新增分类-->
+<div class="ui small modal" id="addCategory">
+    <div class="header">添加分类</div>
+    <div class="content">
+        <form class="ui form">
+            <div class="field">
+                <label>分类名称</label>
+                <input type="text" name="name2" placeholder="分类名称">
+            </div>
+            <div class="field">
+                <label>封面图片地址</label>
+                <input type="text" name="img" placeholder="封面图片地址">
+            </div>
+            <div class="field">
+                <label>推荐</label>
+                <input type="checkbox" name="recommend">
+            </div>
+        </form>
+    </div>
+    <div class="actions">
+        <div class="ui approve button">Approve</div>
+        <div class="ui cancel button">Cancel</div>
+    </div>
+
+</div>
+<!--引入公共底部内容-->
+<footer th:replace="_fragments::footer"></footer>
+<!--引入公共JavaScript-->
+<!--/*/<th:block th:replace="_fragments::script">/*/-->
+<!--/*/</th:block>/*/-->
+<script type="text/javascript">
+    $('.ui.dropdown')
+        .dropdown({
+            on: 'hover'
+        });
+
+    function deleteShow(obj) {
+        let id = $(obj).parent().parent().find("td").eq(0).text();
+        console.log(id);
+        $('#delete')
+            .modal({
+                onApprove: function () {
+                    $.ajax({
+                        url: "/admin/deleteCategory",
+                        type: "post",
+                        data: {"id": id},
+                        dataType: "json",
+                        success: function (re) {
+                            if (re.info === 1) {
+                                window.location.href = "/admin/categoryList";
+                                return false;
+                            }
+                        }
+                    })
+                }
+            })
+            .modal('show');
+    }
+
+    function addShow() {
+        $('#addCategory')
+            .modal({
+                onApprove: function () {
+                    let name = $(" input[ name='name2'] ").val()
+                    let img = $(" input[ name='img'] ").val()
+                    let recommend = $(" input[ name='recommend']:checked ").val()
+                    console.log(name + img)
+                    $.ajax({
+                        url: "/admin/addCategory",
+                        type: "post",
+                        data: {
+                            "name": name,
+                            "recommend": recommend,
+                            "img": img
+                        },
+                        dataType: "json",
+                        success: function (re) {
+                            if (re.info === 1) {
+                                window.location.href = "/admin/categoryList";
+                                return false;
+                            }
+                        }
+                    })
+                }
+            })
+            .modal('show');
+    }
+
+    function editorShow(obj) {
+        let id = $(obj).parent().parent().find("td").eq(0).text();
+        let name2 = $(obj).parent().parent().find("td").eq(2).text();
+        let recommend = $(obj).parent().parent().find("td").eq(4).text();
+        $(" input[ name='name2'] ").val(name2);
+        $(" input[ name='recommend']:checkbox ").attr("checked",recommend==="是");
+        $('#addCategory')
+            .modal({
+                onApprove: function () {
+                    let name = $(" input[ name='name2'] ").val();
+                    let img = $(" input[ name='img'] ").val();
+                    let recommend2 = $(" input[ name='recommend']:checked ").val();
+                    $.ajax({
+                        url: "/admin/updateCategory",
+                        type: "post",
+                        data: {
+                            "id": id,
+                            "name": name,
+                            "recommend": recommend2,
+                            "img": img
+                        },
+                        dataType: "json",
+                        success: function (re) {
+                            if (re.info === 1) {
+                                window.location.href = "/admin/categoryList";
+                                return false;
+                            }
+                        }
+                    })
+                }
+            })
+            .modal('show');
+    }
+</script>
+</body>
+</html>

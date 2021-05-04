@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<!--引入公共head-->
+<head th:replace="_fragments::head(~{::title})">
+    <meta charset="UTF-8">
+    <title>崇明鸟|关于</title>
+</head>
+<body class="body-me">
+<!--引入公共头部导航栏-->
+<nav th:replace="_fragments::nav"></nav>
+<!--中间内容-->
+<div class="m-padded-top-big ui container" style="height: 75%;max-width: 50em !important;">
+    <div class="ui horizontal divider" style="padding-top: 12%">
+        登录~( •̆ ᵕ •̆ )◞ ❤
+    </div>
+    <form class="ui large form m-container" action="/login" method="post">
+        <div class="ui stacked segment">
+            <div class="field">
+                <div class="ui left icon input">
+                    <i class="user icon"></i>
+                    <input type="text" name="name" placeholder="账号">
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui left icon input">
+                    <i class="lock icon"></i>
+                    <input type="password" name="password" placeholder="密码">
+                </div>
+            </div>
+<!--            <div class="field">-->
+<!--                <div class="ui checkbox">-->
+<!--                    <input type="checkbox" tabindex="0" class="hidden">-->
+<!--                    <label>记住我一万年</label>-->
+<!--                </div>-->
+<!--            </div>-->
+            <button type="submit" class="ui fluid large teal submit button">登录</button>
+        </div>
+    </form>
+</div>
+<!--引入公共底部内容-->
+<footer th:replace="_fragments::footer"></footer>
+<!--引入公共JavaScript-->
+<!--/*/<th:block th:replace="_fragments::script">/*/-->
+<!--/*/</th:block>/*/-->
+</body>
+</html>

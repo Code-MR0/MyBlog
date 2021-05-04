@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<!--引入公共head-->
+<head th:replace="_fragments::head(~{::title})">
+    <meta charset="UTF-8">
+    <title>崇明鸟|首页</title>
+</head>
+<body class="body-me">
+<!--引入公共头部导航栏-->
+<nav th:replace="_fragments::nav"></nav>
+<!--中间内容-->
+<div class="m-padded-top-big">
+    <!--中间文章卡片-->
+    <div class="ui main intro container">
+        <div class="ui stackable grid">
+            <!--文章列表-->
+            <div class="eleven wide column">
+                <div class="ui relaxed divided items">
+                    <div class="item" th:each="blog:${blogList}">
+                        <div class="ui small fluid image">
+                            <a class="ui left corner label" style="" th:style="${blog.recommend}?'':'display: none'">
+                                <i class="heart red icon"></i>
+                            </a>
+                            <img  th:src="${blog.firstImg}">
+                        </div>
+                        <div class="content">
+                            <a class="header" th:text="${blog.title}">HashMap为什么是线程不安全的？</a>
+                            <div class="meta">
+                                <i class="eye icon m-i-color"></i><span th:text="${blog.views}"></span>
+                                <i class="calendar plus outline icon m-i-color"></i><span th:text="${#dates.format(blog.updateDate,'yyyy-MM-dd')}"></span>
+                            </div>
+                            <div class="description" th:text="${blog.description}">
+                                只要是对于集合有一定了解的一定都知道HashMap是线程不安全的，我们应该使用ConcurrentHashMap。但是为什么HashMap是线程不安全的呢，之前面试的时候也遇到到这样的问题，但是当时只停留在知道是的层面上，并没有深入理解为什么是。于是今天重温一个HashMap线程不安全的这个问题。
+                            </div>
+                            <div class="extra">
+                                <div class="ui right floated primary button">
+                                    <a th:href="'/blog/'+${blog.id}" style="color: #f2f4f5">阅读全文</a>
+                                    <i class="right chevron icon"></i>
+                                </div>
+                                <div class="ui label">java</div>
+                                <div class="ui label">面试</div>
+                                <div class="ui label">多线程</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右边卡片-->
+            <div class="five wide column">
+                <div class="segments m-opacity-mini">
+                    <!--站长信息-->
+                    <div class="ui segment">
+                        <!--头像 名字 签名-->
+                        <div class="ui grid">
+                            <div class="seven wide column middle aligned">
+                                <a href="/admin/login" target="_blank" class="ui rounded centered aligned image">
+                                    <img src="https://img.imgdb.cn/item/600fff9e3ffa7d37b39a452b.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="nine wide column middle aligned">
+                                <h3 class="m-user-name ui header">爱吃大香蕉</h3>
+                                <small style="font-size: 13px;color: #808080ad">不要脸这事，如果干的好，叫心理素质过硬。要脸这事，如果干得好，叫死要面子活受罪。</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!--分类-->
+                    <div class="ui segment">
+                        <div class="ui two column grid">
+                            <div class="column m-text-tb-c">
+                                <i class="th icon"></i>分类
+                            </div>
+                            <div class="right aligned column">
+                                <a href="/categories">more <i class="angle double right icon"></i></a>
+                            </div>
+                        </div>
+                        <div class="ui fluid vertical menu">
+                            <a th:href="@{/index?category={category}(category=${category.id})}" class="item" th:each="category:${allCategory}">
+                                <span th:text="${category.name}"></span>
+                                <div class="ui teal basic left pointing label" th:text="${category.num}"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--推荐文章-->
+                    <div class="ui segments">
+                        <div class="ui secondary segment m-text-tb-c">
+                            <i class="bookmark icon"></i>最新推荐
+                        </div>
+                        <div class="ui segment" th:each="six:${sixBlog}">
+                            <a href="#" class="m-black m-text-thin" th:text="${six.title}" th:href="'/blog/'+${six.id}">大家都吃奥利给</a>
+                        </div>
+                    </div>
+                    <!--网站信息-->
+                    <div class="ui segments">
+                        <div class="ui secondary segment m-text-tb-c">
+                            <i class="desktop icon"></i>网站信息
+                        </div>
+                        <div class="ui list segment m-padded-tb">
+                            <div class="item m-text-thin" style="margin: 10px">
+                                <i class="file icon"></i>
+                                <div class="content">文章总数：<span th:text="${blogCount}">3</span>篇</div>
+                            </div>
+                            <div class="item m-text-thin" style="margin: 10px">
+                                <i class="comments icon"></i>
+                                <div class="content">评论总数：<span th:text="${commentCount}">：25</span>条</div>
+                            </div>
+                            <div class="item m-text-thin" style="margin: 10px">
+                                <i class="meh icon"></i>
+                                <div class="content">网站最后更新于：<span th:text="${#dates.format(blogList[0].updateDate,'yyyy-MM-dd')}"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="../static/images/dog.gif" th:src="@{/images/dog.gif}" alt="" style="width: 100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--分页按钮-->
+    <div class="ui container column center aligned m-padded-tb">
+        <a class="circular ui basic icon button"
+           th:style="${pn}-1<1?'display: none':''"
+           th:href="@{/index?pn={pn}&category={category}&title={title}(pn=${pn}-1,category=${category},title=${title})}">
+            <i class="icon angle left"></i>
+        </a>
+        <a class="circular ui basic icon button"
+           th:text="${pn}-1"
+           th:style="${pn}-1<1?'display: none':''"
+           th:href="@{/index?pn={pn}&category={category}&title={title}(pn=${pn}-1,category=${category},title=${title})}">
+        </a>
+        <a class="circular ui icon button"
+           th:text="${pn}"
+           th:href="@{/index?pn={pn}&category={category}&title={title}(pn=${pn},category=${category},title=${title})}">
+        </a>
+        <a class="circular ui basic icon button"
+           th:text="${pn}+1"
+           th:style="${pn}+1>${pages}?'display: none':''"
+           th:href="@{/index?pn={pn}&category={category}&title={title}(pn=${pn}+1,category=${category},title=${title})}">
+        </a>
+        <a class="circular ui basic icon button"
+           th:style="${pn}+1>${pages}?'display: none':''"
+           th:href="@{/index?pn={pn}&category={category}&title={title}(pn=${pn}+1,category=${category},title=${title})}">
+            <i class="icon angle right"></i>
+        </a>
+    </div>
+</div>
+<!--引入公共底部内容-->
+<footer th:replace="_fragments::footer"></footer>
+<!--引入公共JavaScript-->
+<!--/*/<th:block th:replace="_fragments::script">/*/-->
+<!--/*/</th:block>/*/-->
+</body>
+</html>

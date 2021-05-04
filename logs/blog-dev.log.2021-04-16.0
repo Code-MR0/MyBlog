@@ -1,0 +1,992 @@
+2021-04-16 19:35:30.046  INFO 22888 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 22888 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 19:35:30.051  INFO 22888 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 19:35:31.721  WARN 22888 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 19:35:32.330  INFO 22888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 19:35:32.340  INFO 22888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 19:35:32.342  INFO 22888 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 19:35:32.344  INFO 22888 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 19:35:32.344  INFO 22888 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 19:35:32.344  INFO 22888 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 19:35:32.376  INFO 22888 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 19:35:32.468  INFO 22888 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 19:35:32.468  INFO 22888 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2357 ms
+2021-04-16 19:35:33.069  INFO 22888 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 19:35:33.228  INFO 22888 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 19:35:34.855  INFO 22888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 19:35:34.857  INFO 22888 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 19:35:34.880  INFO 22888 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-04-16 19:35:34.913  INFO 22888 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 19:35:35.020  INFO 22888 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 5.679 seconds (JVM running for 8.249)
+2021-04-16 19:35:37.075  INFO 22888 --- [http-nio-127.0.0.1-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 19:35:37.075  INFO 22888 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 19:35:37.077  INFO 22888 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-16 19:40:45.998  INFO 24468 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 24468 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 19:40:46.003  INFO 24468 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 19:40:46.941  WARN 24468 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 19:40:47.280  INFO 24468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 19:40:47.289  INFO 24468 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 19:40:47.289  INFO 24468 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 19:40:47.290  INFO 24468 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 19:40:47.290  INFO 24468 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 19:40:47.291  INFO 24468 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 19:40:47.294  INFO 24468 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 19:40:47.367  INFO 24468 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 19:40:47.368  INFO 24468 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1310 ms
+2021-04-16 19:40:47.856  INFO 24468 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 19:40:47.946  INFO 24468 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 19:40:49.363  INFO 24468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 19:40:49.365  INFO 24468 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 19:40:49.379  INFO 24468 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 19:40:49.406  INFO 24468 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 19:40:49.533  INFO 24468 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 19:40:49.535  INFO 24468 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingGET_1
+2021-04-16 19:40:49.536  INFO 24468 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingHEAD_1
+2021-04-16 19:40:49.537  INFO 24468 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingPOST_1
+2021-04-16 19:40:49.538  INFO 24468 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingPUT_1
+2021-04-16 19:40:49.538  INFO 24468 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingPATCH_1
+2021-04-16 19:40:49.539  INFO 24468 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingDELETE_1
+2021-04-16 19:40:49.539  INFO 24468 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingOPTIONS_1
+2021-04-16 19:40:49.540  INFO 24468 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingTRACE_1
+2021-04-16 19:40:49.550  INFO 24468 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 4.204 seconds (JVM running for 5.573)
+2021-04-16 19:40:51.819  INFO 24468 --- [http-nio-127.0.0.1-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 19:40:51.819  INFO 24468 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 19:40:51.820  INFO 24468 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-16 19:41:44.278  INFO 23860 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 23860 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 19:41:44.280  INFO 23860 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 19:41:45.086  WARN 23860 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 19:41:45.375  INFO 23860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 19:41:45.382  INFO 23860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 19:41:45.382  INFO 23860 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 19:41:45.383  INFO 23860 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 19:41:45.383  INFO 23860 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 19:41:45.384  INFO 23860 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 19:41:45.387  INFO 23860 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 19:41:45.465  INFO 23860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 19:41:45.465  INFO 23860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1146 ms
+2021-04-16 19:41:45.859  INFO 23860 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 19:41:45.929  INFO 23860 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 19:41:47.149  INFO 23860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 19:41:47.151  INFO 23860 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 19:41:47.166  INFO 23860 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 19:41:47.191  INFO 23860 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 19:41:47.319  INFO 23860 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 19:41:47.321  INFO 23860 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingGET_1
+2021-04-16 19:41:47.322  INFO 23860 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingHEAD_1
+2021-04-16 19:41:47.323  INFO 23860 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingPOST_1
+2021-04-16 19:41:47.324  INFO 23860 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingPUT_1
+2021-04-16 19:41:47.325  INFO 23860 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingPATCH_1
+2021-04-16 19:41:47.325  INFO 23860 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingDELETE_1
+2021-04-16 19:41:47.326  INFO 23860 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingOPTIONS_1
+2021-04-16 19:41:47.327  INFO 23860 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingTRACE_1
+2021-04-16 19:41:47.337  INFO 23860 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 3.669 seconds (JVM running for 4.788)
+2021-04-16 19:41:55.064  INFO 23860 --- [http-nio-127.0.0.1-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 19:41:55.065  INFO 23860 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 19:41:55.066  INFO 23860 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-16 19:43:10.539  INFO 19652 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 19652 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 19:43:10.541  INFO 19652 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 19:43:11.456  WARN 19652 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 19:43:11.764  INFO 19652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 19:43:11.774  INFO 19652 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 19:43:11.774  INFO 19652 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 19:43:11.776  INFO 19652 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 19:43:11.777  INFO 19652 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 19:43:11.777  INFO 19652 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 19:43:11.782  INFO 19652 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 19:43:11.864  INFO 19652 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 19:43:11.864  INFO 19652 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1265 ms
+2021-04-16 19:43:12.312  INFO 19652 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 19:43:12.388  INFO 19652 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 19:43:13.602  INFO 19652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 19:43:13.603  INFO 19652 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 19:43:13.617  INFO 19652 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 19:43:13.643  INFO 19652 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 19:43:13.780  INFO 19652 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 19:43:13.784  INFO 19652 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingGET_1
+2021-04-16 19:43:13.786  INFO 19652 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingHEAD_1
+2021-04-16 19:43:13.786  INFO 19652 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingPOST_1
+2021-04-16 19:43:13.787  INFO 19652 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingPUT_1
+2021-04-16 19:43:13.788  INFO 19652 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingPATCH_1
+2021-04-16 19:43:13.788  INFO 19652 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingDELETE_1
+2021-04-16 19:43:13.789  INFO 19652 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingOPTIONS_1
+2021-04-16 19:43:13.790  INFO 19652 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingTRACE_1
+2021-04-16 19:43:13.801  INFO 19652 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 4.276 seconds (JVM running for 5.71)
+2021-04-16 19:43:47.117  INFO 19652 --- [http-nio-127.0.0.1-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 19:43:47.117  INFO 19652 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 19:43:47.120  INFO 19652 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-16 20:39:07.125  INFO 22532 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 22532 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 20:39:07.127  INFO 22532 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 20:39:07.987  WARN 22532 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 20:39:08.395  INFO 22532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 20:39:08.404  INFO 22532 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 20:39:08.404  INFO 22532 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 20:39:08.405  INFO 22532 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 20:39:08.406  INFO 22532 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 20:39:08.406  INFO 22532 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 20:39:08.436  INFO 22532 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 20:39:08.515  INFO 22532 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 20:39:08.515  INFO 22532 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1340 ms
+2021-04-16 20:39:08.587  WARN 22532 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'TBlogServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.blog.mapper.TBlogMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-04-16 20:39:08.590  INFO 22532 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-04-16 20:39:08.611  INFO 22532 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-16 20:39:08.639 ERROR 22532 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'TBlogServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.blog.mapper.TBlogMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at com.blog.BlogApplication.main(BlogApplication.java:10)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.blog.mapper.TBlogMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 21 common frames omitted
+
+2021-04-16 20:41:23.227  INFO 5436 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 5436 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 20:41:23.230  INFO 5436 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 20:41:24.029  WARN 5436 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 20:41:24.311  INFO 5436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 20:41:24.318  INFO 5436 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 20:41:24.319  INFO 5436 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 20:41:24.320  INFO 5436 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 20:41:24.320  INFO 5436 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 20:41:24.320  INFO 5436 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 20:41:24.324  INFO 5436 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 20:41:24.400  INFO 5436 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 20:41:24.400  INFO 5436 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1124 ms
+2021-04-16 20:41:24.847  INFO 5436 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 20:41:24.925  INFO 5436 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 20:41:26.139  INFO 5436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 20:41:26.142  INFO 5436 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 20:41:26.162  INFO 5436 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 20:41:26.192  INFO 5436 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 20:41:26.343  INFO 5436 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 20:41:26.345  INFO 5436 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingGET_1
+2021-04-16 20:41:26.346  INFO 5436 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingHEAD_1
+2021-04-16 20:41:26.347  INFO 5436 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingPOST_1
+2021-04-16 20:41:26.348  INFO 5436 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingPUT_1
+2021-04-16 20:41:26.350  INFO 5436 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingPATCH_1
+2021-04-16 20:41:26.351  INFO 5436 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingDELETE_1
+2021-04-16 20:41:26.351  INFO 5436 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingOPTIONS_1
+2021-04-16 20:41:26.353  INFO 5436 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: helloUsingTRACE_1
+2021-04-16 20:41:26.364  INFO 5436 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 3.749 seconds (JVM running for 4.869)
+2021-04-16 20:41:59.258  INFO 5436 --- [http-nio-127.0.0.1-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 20:41:59.258  INFO 5436 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 20:41:59.259  INFO 5436 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-16 21:10:45.326  INFO 19212 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 19212 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 21:10:45.339  INFO 19212 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 21:10:46.461  WARN 19212 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 21:10:46.866  INFO 19212 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 21:10:46.876  INFO 19212 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 21:10:46.876  INFO 19212 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 21:10:46.877  INFO 19212 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 21:10:46.878  INFO 19212 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 21:10:46.878  INFO 19212 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 21:10:46.937  INFO 19212 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 21:10:47.037  INFO 19212 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 21:10:47.037  INFO 19212 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1649 ms
+2021-04-16 21:10:47.546  INFO 19212 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 21:10:47.622  INFO 19212 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 21:10:47.680  INFO 19212 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 21:10:48.905  INFO 19212 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 21:10:48.906  INFO 19212 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 21:10:48.925  INFO 19212 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 21:10:48.956  INFO 19212 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:10:49.102  INFO 19212 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:10:49.112  INFO 19212 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 4.486 seconds (JVM running for 6.024)
+2021-04-16 21:10:55.139  INFO 19212 --- [http-nio-127.0.0.1-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 21:10:55.139  INFO 19212 --- [http-nio-127.0.0.1-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 21:10:55.140  INFO 19212 --- [http-nio-127.0.0.1-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-16 21:12:41.270  INFO 21628 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 21628 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 21:12:41.273  INFO 21628 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 21:12:42.326  WARN 21628 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 21:12:42.709  INFO 21628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 21:12:42.719  INFO 21628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 21:12:42.720  INFO 21628 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 21:12:42.721  INFO 21628 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 21:12:42.721  INFO 21628 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 21:12:42.721  INFO 21628 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 21:12:42.725  INFO 21628 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 21:12:42.811  INFO 21628 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 21:12:42.811  INFO 21628 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1474 ms
+2021-04-16 21:12:43.352  INFO 21628 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 21:12:43.443  INFO 21628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 21:12:43.503  INFO 21628 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 21:12:44.891  INFO 21628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 21:12:44.892  INFO 21628 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 21:12:44.909  INFO 21628 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 21:12:44.943  INFO 21628 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:12:45.150  INFO 21628 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:12:45.159  INFO 21628 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 5.809 seconds (JVM running for 7.411)
+2021-04-16 21:12:47.959  INFO 21628 --- [http-nio-127.0.0.1-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 21:12:47.959  INFO 21628 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 21:12:47.960  INFO 21628 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-16 21:14:00.511  INFO 24644 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 24644 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 21:14:00.515  INFO 24644 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 21:14:01.446  WARN 24644 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 21:14:01.820  INFO 24644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 21:14:01.830  INFO 24644 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 21:14:01.830  INFO 24644 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 21:14:01.832  INFO 24644 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 21:14:01.832  INFO 24644 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 21:14:01.832  INFO 24644 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 21:14:01.835  INFO 24644 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 21:14:01.924  INFO 24644 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 21:14:01.926  INFO 24644 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1366 ms
+2021-04-16 21:14:02.472  INFO 24644 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 21:14:02.570  INFO 24644 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 21:14:02.634  INFO 24644 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 21:14:04.051  INFO 24644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 21:14:04.052  INFO 24644 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 21:14:04.074  INFO 24644 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 21:14:04.108  INFO 24644 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:14:04.269  INFO 24644 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:14:04.282  INFO 24644 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 4.998 seconds (JVM running for 6.628)
+2021-04-16 21:14:05.718  INFO 24644 --- [http-nio-127.0.0.1-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 21:14:05.718  INFO 24644 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 21:14:05.720  INFO 24644 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-16 21:21:39.879  INFO 21248 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 21248 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 21:21:39.882  INFO 21248 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 21:21:40.909  WARN 21248 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 21:21:41.292  INFO 21248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 21:21:41.306  INFO 21248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 21:21:41.306  INFO 21248 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 21:21:41.308  INFO 21248 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 21:21:41.308  INFO 21248 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 21:21:41.308  INFO 21248 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 21:21:41.312  INFO 21248 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 21:21:41.397  INFO 21248 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 21:21:41.397  INFO 21248 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1457 ms
+2021-04-16 21:21:41.931  INFO 21248 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 21:21:42.025  INFO 21248 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 21:21:42.096  INFO 21248 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 21:21:43.494  INFO 21248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 21:21:43.495  INFO 21248 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 21:21:43.513  INFO 21248 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 21:21:43.548  INFO 21248 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:21:43.722  INFO 21248 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:21:43.726  INFO 21248 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 21:21:43.726  INFO 21248 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 21:21:43.727  INFO 21248 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 21:21:43.728  INFO 21248 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 21:21:43.729  INFO 21248 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 21:21:43.742  INFO 21248 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 4.586 seconds (JVM running for 5.965)
+2021-04-16 21:21:52.001  INFO 21248 --- [http-nio-127.0.0.1-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 21:21:52.002  INFO 21248 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 21:21:52.003  INFO 21248 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-16 21:23:00.201  INFO 8300 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 8300 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 21:23:00.204  INFO 8300 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 21:23:01.245  WARN 8300 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 21:23:01.624  INFO 8300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 21:23:01.636  INFO 8300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 21:23:01.636  INFO 8300 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 21:23:01.637  INFO 8300 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 21:23:01.638  INFO 8300 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 21:23:01.638  INFO 8300 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 21:23:01.642  INFO 8300 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 21:23:01.732  INFO 8300 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 21:23:01.732  INFO 8300 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1465 ms
+2021-04-16 21:23:02.225  INFO 8300 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 21:23:02.320  INFO 8300 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 21:23:02.412  INFO 8300 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 21:23:03.785  INFO 8300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 21:23:03.787  INFO 8300 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 21:23:03.805  INFO 8300 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 21:23:03.838  INFO 8300 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:23:04.011  INFO 8300 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:23:04.013  INFO 8300 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 21:23:04.015  INFO 8300 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 21:23:04.018  INFO 8300 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 21:23:04.020  INFO 8300 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 21:23:04.024  INFO 8300 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 21:23:04.034  INFO 8300 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 4.522 seconds (JVM running for 5.854)
+2021-04-16 21:23:06.262  INFO 8300 --- [http-nio-127.0.0.1-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 21:23:06.263  INFO 8300 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 21:23:06.264  INFO 8300 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-16 21:35:21.291  INFO 26092 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 26092 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 21:35:21.302  INFO 26092 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 21:35:22.128  WARN 26092 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 21:35:22.449  INFO 26092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 21:35:22.456  INFO 26092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 21:35:22.457  INFO 26092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 21:35:22.458  INFO 26092 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 21:35:22.458  INFO 26092 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 21:35:22.459  INFO 26092 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 21:35:22.462  INFO 26092 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 21:35:22.539  INFO 26092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 21:35:22.539  INFO 26092 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1197 ms
+2021-04-16 21:35:23.570  WARN 26092 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'upLoadController': Unsatisfied dependency expressed through method 'uploadBlog' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.multipart.MultipartFile' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.web.bind.annotation.RequestParam(name=, value=editormd-image-file, defaultValue=
+		
+		
+
+				
+, required=true)}
+2021-04-16 21:35:23.574  INFO 26092 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-04-16 21:35:23.642  INFO 26092 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-16 21:35:23.670 ERROR 26092 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method uploadBlog in com.blog.controller.UpLoadController required a bean of type 'org.springframework.web.multipart.MultipartFile' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.web.bind.annotation.RequestParam(name=, value=editormd-image-file, defaultValue=
+		
+		
+
+				
+, required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.multipart.MultipartFile' in your configuration.
+
+2021-04-16 21:37:05.542  INFO 21852 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 21852 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 21:37:05.545  INFO 21852 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 21:37:06.449  WARN 21852 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 21:37:06.817  INFO 21852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 21:37:06.825  INFO 21852 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 21:37:06.825  INFO 21852 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 21:37:06.826  INFO 21852 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 21:37:06.827  INFO 21852 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 21:37:06.828  INFO 21852 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 21:37:06.834  INFO 21852 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 21:37:07.134  INFO 21852 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 21:37:07.134  INFO 21852 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1534 ms
+2021-04-16 21:37:07.876  WARN 21852 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'upLoadController': Unsatisfied dependency expressed through method 'uploadBlog' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.multipart.MultipartFile' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.web.bind.annotation.RequestParam(name=, value=editormd-image-file, defaultValue=
+		
+		
+
+				
+, required=true)}
+2021-04-16 21:37:07.880  INFO 21852 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-04-16 21:37:07.900  INFO 21852 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-16 21:37:07.919 ERROR 21852 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method uploadBlog in com.blog.controller.UpLoadController required a bean of type 'org.springframework.web.multipart.MultipartFile' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.web.bind.annotation.RequestParam(name=, value=editormd-image-file, defaultValue=
+		
+		
+
+				
+, required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.multipart.MultipartFile' in your configuration.
+
+2021-04-16 21:43:07.837  INFO 15948 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 15948 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 21:43:07.840  INFO 15948 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 21:43:08.750  WARN 15948 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 21:43:09.114  INFO 15948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 21:43:09.124  INFO 15948 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 21:43:09.125  INFO 15948 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 21:43:09.126  INFO 15948 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 21:43:09.126  INFO 15948 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 21:43:09.127  INFO 15948 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 21:43:09.130  INFO 15948 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 21:43:09.212  INFO 15948 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 21:43:09.212  INFO 15948 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1321 ms
+2021-04-16 21:43:10.588  INFO 15948 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 21:43:10.682  INFO 15948 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 21:43:10.741  INFO 15948 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 21:43:12.382  INFO 15948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 21:43:12.384  INFO 15948 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 21:43:12.416  INFO 15948 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 21:43:12.491  INFO 15948 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:43:12.708  INFO 15948 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:43:12.714  INFO 15948 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 21:43:12.716  INFO 15948 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 21:43:12.718  INFO 15948 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 21:43:12.719  INFO 15948 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-16 21:43:12.720  INFO 15948 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 21:43:12.721  INFO 15948 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 21:43:12.722  INFO 15948 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-04-16 21:43:12.731  INFO 15948 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-16 21:43:12.739  INFO 15948 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 5.567 seconds (JVM running for 7.006)
+2021-04-16 21:43:19.577  INFO 15948 --- [http-nio-127.0.0.1-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 21:43:19.577  INFO 15948 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 21:43:19.578  INFO 15948 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-16 21:43:45.268  INFO 9100 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 9100 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 21:43:45.270  INFO 9100 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 21:43:46.283  WARN 9100 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 21:43:46.643  INFO 9100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 21:43:46.652  INFO 9100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 21:43:46.653  INFO 9100 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 21:43:46.654  INFO 9100 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 21:43:46.654  INFO 9100 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 21:43:46.654  INFO 9100 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 21:43:46.659  INFO 9100 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 21:43:46.763  INFO 9100 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 21:43:46.763  INFO 9100 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1442 ms
+2021-04-16 21:43:48.280  INFO 9100 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 21:43:48.360  INFO 9100 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 21:43:48.417  INFO 9100 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 21:43:49.768  INFO 9100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 21:43:49.769  INFO 9100 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 21:43:49.788  INFO 9100 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 21:43:49.823  INFO 9100 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:43:50.005  INFO 9100 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:43:50.008  INFO 9100 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 21:43:50.009  INFO 9100 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 21:43:50.011  INFO 9100 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 21:43:50.012  INFO 9100 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-16 21:43:50.013  INFO 9100 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 21:43:50.014  INFO 9100 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 21:43:50.016  INFO 9100 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-04-16 21:43:50.017  INFO 9100 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-16 21:43:50.027  INFO 9100 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 5.492 seconds (JVM running for 6.958)
+2021-04-16 21:43:50.811  INFO 9100 --- [http-nio-127.0.0.1-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 21:43:50.811  INFO 9100 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 21:43:50.813  INFO 9100 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-16 21:47:07.984  INFO 10180 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 10180 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 21:47:08.002  INFO 10180 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 21:47:08.810  WARN 10180 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 21:47:09.108  INFO 10180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 21:47:09.115  INFO 10180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 21:47:09.115  INFO 10180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 21:47:09.117  INFO 10180 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 21:47:09.117  INFO 10180 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 21:47:09.117  INFO 10180 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 21:47:09.120  INFO 10180 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 21:47:09.198  INFO 10180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 21:47:09.198  INFO 10180 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1146 ms
+2021-04-16 21:47:10.394  INFO 10180 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 21:47:10.467  INFO 10180 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 21:47:10.517  INFO 10180 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 21:47:11.810  INFO 10180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 21:47:11.811  INFO 10180 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 21:47:11.830  INFO 10180 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 21:47:11.862  INFO 10180 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:47:12.051  INFO 10180 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:47:12.054  INFO 10180 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 21:47:12.056  INFO 10180 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 21:47:12.056  INFO 10180 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 21:47:12.057  INFO 10180 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-16 21:47:12.058  INFO 10180 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 21:47:12.060  INFO 10180 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 21:47:12.061  INFO 10180 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-04-16 21:47:12.068  INFO 10180 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-16 21:47:12.077  INFO 10180 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 4.858 seconds (JVM running for 6.093)
+2021-04-16 21:47:13.685  INFO 10180 --- [http-nio-127.0.0.1-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 21:47:13.685  INFO 10180 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 21:47:13.686  INFO 10180 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-16 21:47:59.485  INFO 20624 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 20624 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 21:47:59.487  INFO 20624 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 21:48:00.477  WARN 20624 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 21:48:00.843  INFO 20624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 21:48:00.853  INFO 20624 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 21:48:00.854  INFO 20624 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 21:48:00.855  INFO 20624 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 21:48:00.855  INFO 20624 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 21:48:00.855  INFO 20624 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 21:48:00.858  INFO 20624 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 21:48:00.990  INFO 20624 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 21:48:00.990  INFO 20624 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1453 ms
+2021-04-16 21:48:02.471  INFO 20624 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 21:48:02.552  INFO 20624 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 21:48:02.607  INFO 20624 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 21:48:04.044  INFO 20624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 21:48:04.045  INFO 20624 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 21:48:04.063  INFO 20624 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 21:48:04.096  INFO 20624 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:48:04.259  INFO 20624 --- [http-nio-127.0.0.1-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 21:48:04.260  INFO 20624 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 21:48:04.261  INFO 20624 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-16 21:48:04.323  INFO 20624 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:48:04.325  INFO 20624 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 21:48:04.327  INFO 20624 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 21:48:04.328  INFO 20624 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 21:48:04.329  INFO 20624 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-16 21:48:04.330  INFO 20624 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 21:48:04.332  INFO 20624 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 21:48:04.335  INFO 20624 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-04-16 21:48:04.338  INFO 20624 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-16 21:48:04.347  INFO 20624 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 5.595 seconds (JVM running for 6.992)
+2021-04-16 21:51:09.409  INFO 21916 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 21916 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 21:51:09.412  INFO 21916 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 21:51:10.581  WARN 21916 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 21:51:10.953  INFO 21916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 21:51:10.961  INFO 21916 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 21:51:10.961  INFO 21916 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 21:51:10.963  INFO 21916 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 21:51:10.963  INFO 21916 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 21:51:10.964  INFO 21916 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 21:51:10.967  INFO 21916 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 21:51:11.079  INFO 21916 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 21:51:11.079  INFO 21916 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1617 ms
+2021-04-16 21:51:12.644  INFO 21916 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 21:51:12.725  INFO 21916 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 21:51:12.781  INFO 21916 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 21:51:14.091  INFO 21916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 21:51:14.092  INFO 21916 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 21:51:14.110  INFO 21916 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 21:51:14.145  INFO 21916 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:51:14.328  INFO 21916 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:51:14.331  INFO 21916 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 21:51:14.333  INFO 21916 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 21:51:14.334  INFO 21916 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 21:51:14.335  INFO 21916 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-16 21:51:14.336  INFO 21916 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 21:51:14.338  INFO 21916 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 21:51:14.342  INFO 21916 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-04-16 21:51:14.344  INFO 21916 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-16 21:51:14.353  INFO 21916 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 5.774 seconds (JVM running for 7.312)
+2021-04-16 21:51:25.544  INFO 21916 --- [http-nio-127.0.0.1-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 21:51:25.544  INFO 21916 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 21:51:25.546  INFO 21916 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-16 21:55:18.082  INFO 21268 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 21268 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 21:55:18.085  INFO 21268 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 21:55:19.187  WARN 21268 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 21:55:19.511  INFO 21268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 21:55:19.519  INFO 21268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 21:55:19.519  INFO 21268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 21:55:19.520  INFO 21268 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 21:55:19.521  INFO 21268 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 21:55:19.521  INFO 21268 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 21:55:19.524  INFO 21268 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 21:55:19.604  INFO 21268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 21:55:19.604  INFO 21268 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1480 ms
+2021-04-16 21:55:20.855  INFO 21268 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 21:55:20.923  INFO 21268 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 21:55:20.974  INFO 21268 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 21:55:22.138  INFO 21268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 21:55:22.139  INFO 21268 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 21:55:22.157  INFO 21268 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 21:55:22.190  INFO 21268 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:55:22.342  INFO 21268 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:55:22.345  INFO 21268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 21:55:22.346  INFO 21268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 21:55:22.347  INFO 21268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 21:55:22.348  INFO 21268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-16 21:55:22.349  INFO 21268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 21:55:22.350  INFO 21268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 21:55:22.352  INFO 21268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-04-16 21:55:22.354  INFO 21268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-16 21:55:22.362  INFO 21268 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 4.829 seconds (JVM running for 6.024)
+2021-04-16 21:55:26.639  INFO 21268 --- [http-nio-127.0.0.1-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 21:55:26.640  INFO 21268 --- [http-nio-127.0.0.1-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 21:55:26.643  INFO 21268 --- [http-nio-127.0.0.1-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-16 21:56:58.634  INFO 3756 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 3756 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 21:56:58.637  INFO 3756 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 21:56:59.679  WARN 3756 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 21:56:59.987  INFO 3756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 21:56:59.995  INFO 3756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 21:56:59.995  INFO 3756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 21:56:59.996  INFO 3756 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 21:56:59.997  INFO 3756 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 21:56:59.997  INFO 3756 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 21:57:00.001  INFO 3756 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 21:57:00.083  INFO 3756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 21:57:00.083  INFO 3756 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1406 ms
+2021-04-16 21:57:01.320  INFO 3756 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 21:57:01.398  INFO 3756 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 21:57:01.449  INFO 3756 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 21:57:02.589  INFO 3756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 21:57:02.590  INFO 3756 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 21:57:02.605  INFO 3756 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 21:57:02.629  INFO 3756 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:57:02.783  INFO 3756 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:57:02.786  INFO 3756 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 21:57:02.789  INFO 3756 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 21:57:02.790  INFO 3756 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 21:57:02.791  INFO 3756 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-16 21:57:02.793  INFO 3756 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 21:57:02.794  INFO 3756 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 21:57:02.795  INFO 3756 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-04-16 21:57:02.798  INFO 3756 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-16 21:57:02.807  INFO 3756 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 4.745 seconds (JVM running for 5.986)
+2021-04-16 21:57:08.594  INFO 3756 --- [http-nio-127.0.0.1-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 21:57:08.596  INFO 3756 --- [http-nio-127.0.0.1-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 21:57:08.597  INFO 3756 --- [http-nio-127.0.0.1-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-16 21:57:31.734  INFO 9676 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 9676 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 21:57:31.736  INFO 9676 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 21:57:32.724  WARN 9676 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 21:57:33.078  INFO 9676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 21:57:33.089  INFO 9676 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 21:57:33.089  INFO 9676 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 21:57:33.091  INFO 9676 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 21:57:33.091  INFO 9676 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 21:57:33.091  INFO 9676 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 21:57:33.094  INFO 9676 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 21:57:33.187  INFO 9676 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 21:57:33.187  INFO 9676 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1384 ms
+2021-04-16 21:57:34.594  INFO 9676 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 21:57:34.679  INFO 9676 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 21:57:34.738  INFO 9676 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 21:57:36.063  INFO 9676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 21:57:36.064  INFO 9676 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 21:57:36.082  INFO 9676 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 21:57:36.125  INFO 9676 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:57:36.306  INFO 9676 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:57:36.309  INFO 9676 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 21:57:36.310  INFO 9676 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 21:57:36.311  INFO 9676 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 21:57:36.312  INFO 9676 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-16 21:57:36.313  INFO 9676 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 21:57:36.314  INFO 9676 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 21:57:36.316  INFO 9676 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-04-16 21:57:36.317  INFO 9676 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-16 21:57:36.328  INFO 9676 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 5.37 seconds (JVM running for 6.727)
+2021-04-16 21:57:37.664  INFO 9676 --- [http-nio-127.0.0.1-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 21:57:37.664  INFO 9676 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 21:57:37.665  INFO 9676 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-16 21:58:09.000  INFO 23484 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 23484 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 21:58:09.003  INFO 23484 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 21:58:09.829  WARN 23484 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 21:58:10.168  INFO 23484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 21:58:10.176  INFO 23484 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 21:58:10.176  INFO 23484 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 21:58:10.178  INFO 23484 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 21:58:10.178  INFO 23484 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 21:58:10.179  INFO 23484 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 21:58:10.182  INFO 23484 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 21:58:10.263  INFO 23484 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 21:58:10.263  INFO 23484 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1193 ms
+2021-04-16 21:58:11.593  INFO 23484 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 21:58:11.702  INFO 23484 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 21:58:11.763  INFO 23484 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 21:58:13.052  INFO 23484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 21:58:13.053  INFO 23484 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 21:58:13.073  INFO 23484 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 21:58:13.112  INFO 23484 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:58:13.346  INFO 23484 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:58:13.348  INFO 23484 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 21:58:13.350  INFO 23484 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 21:58:13.351  INFO 23484 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 21:58:13.352  INFO 23484 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-16 21:58:13.353  INFO 23484 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 21:58:13.366  INFO 23484 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 21:58:13.368  INFO 23484 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-04-16 21:58:13.370  INFO 23484 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-16 21:58:13.381  INFO 23484 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 4.995 seconds (JVM running for 6.138)
+2021-04-16 21:58:15.776  INFO 23484 --- [http-nio-127.0.0.1-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 21:58:15.777  INFO 23484 --- [http-nio-127.0.0.1-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 21:58:15.780  INFO 23484 --- [http-nio-127.0.0.1-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-16 21:59:08.819  INFO 19800 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 19800 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 21:59:08.820  INFO 19800 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 21:59:09.893  WARN 19800 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 21:59:10.376  INFO 19800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-16 21:59:10.387  INFO 19800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 21:59:10.388  INFO 19800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 21:59:10.389  INFO 19800 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 21:59:10.389  INFO 19800 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 21:59:10.389  INFO 19800 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 21:59:10.392  INFO 19800 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 21:59:10.506  INFO 19800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 21:59:10.507  INFO 19800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1641 ms
+2021-04-16 21:59:12.074  INFO 19800 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 21:59:12.155  INFO 19800 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 21:59:12.212  INFO 19800 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 21:59:13.552  INFO 19800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-16 21:59:13.555  INFO 19800 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 21:59:13.573  INFO 19800 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 21:59:13.608  INFO 19800 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:59:13.779  INFO 19800 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 21:59:13.782  INFO 19800 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 21:59:13.786  INFO 19800 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 21:59:13.789  INFO 19800 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 21:59:13.790  INFO 19800 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-16 21:59:13.791  INFO 19800 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 21:59:13.792  INFO 19800 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 21:59:13.793  INFO 19800 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-04-16 21:59:13.795  INFO 19800 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-16 21:59:13.806  INFO 19800 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 5.75 seconds (JVM running for 7.193)
+2021-04-16 21:59:14.252  INFO 19800 --- [http-nio-127.0.0.1-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 21:59:14.253  INFO 19800 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 21:59:14.255  INFO 19800 --- [http-nio-127.0.0.1-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-16 22:01:11.277  INFO 10964 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 10964 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 22:01:11.279  INFO 10964 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 22:01:12.365  WARN 10964 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 22:01:12.739  INFO 10964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-04-16 22:01:12.747  INFO 10964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 22:01:12.748  INFO 10964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 22:01:12.749  INFO 10964 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 22:01:12.749  INFO 10964 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 22:01:12.749  INFO 10964 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 22:01:12.753  INFO 10964 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 22:01:12.849  INFO 10964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 22:01:12.849  INFO 10964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1506 ms
+2021-04-16 22:01:14.309  INFO 10964 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 22:01:14.386  INFO 10964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 22:01:14.441  INFO 10964 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 22:01:15.793  INFO 10964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-04-16 22:01:15.794  INFO 10964 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 22:01:15.816  INFO 10964 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 22:01:15.850  INFO 10964 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 22:01:16.042  INFO 10964 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 22:01:16.046  INFO 10964 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 22:01:16.047  INFO 10964 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 22:01:16.048  INFO 10964 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 22:01:16.049  INFO 10964 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-16 22:01:16.050  INFO 10964 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 22:01:16.050  INFO 10964 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 22:01:16.052  INFO 10964 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-04-16 22:01:16.054  INFO 10964 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-16 22:01:16.065  INFO 10964 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 5.591 seconds (JVM running for 6.93)
+2021-04-16 22:01:29.134  INFO 10964 --- [http-nio-127.0.0.1-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 22:01:29.135  INFO 10964 --- [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 22:01:29.139  INFO 10964 --- [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-04-16 22:03:05.478  INFO 25568 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 25568 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 22:03:05.480  INFO 25568 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 22:03:06.397  WARN 25568 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 22:03:06.756  INFO 25568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-04-16 22:03:06.764  INFO 25568 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 22:03:06.765  INFO 25568 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 22:03:06.769  INFO 25568 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 22:03:06.769  INFO 25568 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 22:03:06.770  INFO 25568 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 22:03:06.774  INFO 25568 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 22:03:06.868  INFO 25568 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 22:03:06.869  INFO 25568 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1343 ms
+2021-04-16 22:03:08.238  INFO 25568 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 22:03:08.324  INFO 25568 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 22:03:08.379  INFO 25568 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 22:03:09.666  INFO 25568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-04-16 22:03:09.667  INFO 25568 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 22:03:09.686  INFO 25568 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 22:03:09.718  INFO 25568 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 22:03:09.901  INFO 25568 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 22:03:09.906  INFO 25568 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 22:03:09.908  INFO 25568 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 22:03:09.909  INFO 25568 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 22:03:09.910  INFO 25568 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-16 22:03:09.912  INFO 25568 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 22:03:09.913  INFO 25568 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 22:03:09.914  INFO 25568 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-04-16 22:03:09.916  INFO 25568 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-16 22:03:09.928  INFO 25568 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 5.236 seconds (JVM running for 6.936)
+2021-04-16 22:03:11.536  INFO 25568 --- [http-nio-127.0.0.1-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 22:03:11.536  INFO 25568 --- [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 22:03:11.539  INFO 25568 --- [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-04-16 22:04:59.121  INFO 7220 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 7220 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 22:04:59.128  INFO 7220 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 22:05:00.125  WARN 7220 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 22:05:00.426  INFO 7220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-04-16 22:05:00.433  INFO 7220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 22:05:00.434  INFO 7220 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 22:05:00.435  INFO 7220 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 22:05:00.435  INFO 7220 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 22:05:00.435  INFO 7220 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 22:05:00.438  INFO 7220 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 22:05:00.516  INFO 7220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 22:05:00.516  INFO 7220 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1295 ms
+2021-04-16 22:05:03.088  INFO 7220 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 22:05:03.206  INFO 7220 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 22:05:03.261  INFO 7220 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 22:05:04.580  INFO 7220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-04-16 22:05:04.581  INFO 7220 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 22:05:04.597  INFO 7220 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 22:05:04.627  INFO 7220 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 22:05:04.789  INFO 7220 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 22:05:04.792  INFO 7220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 22:05:04.794  INFO 7220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 22:05:04.795  INFO 7220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 22:05:04.796  INFO 7220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-16 22:05:04.797  INFO 7220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 22:05:04.798  INFO 7220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 22:05:04.799  INFO 7220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-04-16 22:05:04.802  INFO 7220 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-16 22:05:04.820  INFO 7220 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 6.464 seconds (JVM running for 7.642)
+2021-04-16 22:05:07.009  INFO 7220 --- [http-nio-127.0.0.1-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 22:05:07.010  INFO 7220 --- [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 22:05:07.011  INFO 7220 --- [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-16 22:11:03.432  INFO 12344 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 12344 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 22:11:03.435  INFO 12344 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 22:11:04.619  WARN 12344 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 22:11:05.070  INFO 12344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-04-16 22:11:05.078  INFO 12344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 22:11:05.079  INFO 12344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 22:11:05.081  INFO 12344 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 22:11:05.081  INFO 12344 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 22:11:05.082  INFO 12344 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 22:11:05.085  INFO 12344 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 22:11:05.173  INFO 12344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 22:11:05.173  INFO 12344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1670 ms
+2021-04-16 22:11:06.564  INFO 12344 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 22:11:06.643  INFO 12344 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 22:11:06.702  INFO 12344 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 22:11:08.087  INFO 12344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-04-16 22:11:08.089  INFO 12344 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 22:11:08.106  INFO 12344 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 22:11:08.139  INFO 12344 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 22:11:08.295  INFO 12344 --- [http-nio-127.0.0.1-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 22:11:08.296  INFO 12344 --- [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 22:11:08.298  INFO 12344 --- [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-16 22:11:08.338  INFO 12344 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 22:11:08.341  INFO 12344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 22:11:08.343  INFO 12344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 22:11:08.454  INFO 12344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 22:11:08.456  INFO 12344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-16 22:11:08.459  INFO 12344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 22:11:08.460  INFO 12344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 22:11:08.463  INFO 12344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-04-16 22:11:08.470  INFO 12344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-16 22:11:08.479  INFO 12344 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 5.791 seconds (JVM running for 7.185)
+2021-04-16 22:16:38.971  INFO 25884 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 25884 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 22:16:38.975  INFO 25884 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 22:16:40.023  WARN 25884 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 22:16:40.387  INFO 25884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-04-16 22:16:40.395  INFO 25884 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 22:16:40.397  INFO 25884 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 22:16:40.399  INFO 25884 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 22:16:40.400  INFO 25884 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 22:16:40.400  INFO 25884 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 22:16:40.403  INFO 25884 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 22:16:40.493  INFO 25884 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 22:16:40.494  INFO 25884 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1452 ms
+2021-04-16 22:16:41.904  INFO 25884 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 22:16:41.987  INFO 25884 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 22:16:42.050  INFO 25884 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 22:16:43.477  INFO 25884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-04-16 22:16:43.479  INFO 25884 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 22:16:43.497  INFO 25884 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 22:16:43.533  INFO 25884 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 22:16:43.656  INFO 25884 --- [http-nio-127.0.0.1-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 22:16:43.656  INFO 25884 --- [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 22:16:43.658  INFO 25884 --- [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-16 22:16:43.760  INFO 25884 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 22:16:43.762  INFO 25884 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 22:16:43.763  INFO 25884 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 22:16:43.764  INFO 25884 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 22:16:43.767  INFO 25884 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-16 22:16:43.770  INFO 25884 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 22:16:43.772  INFO 25884 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 22:16:43.774  INFO 25884 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-04-16 22:16:43.776  INFO 25884 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-16 22:16:43.788  INFO 25884 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 5.567 seconds (JVM running for 7.19)
+2021-04-16 22:20:46.265  INFO 13824 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 13824 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 22:20:46.267  INFO 13824 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 22:20:47.235  WARN 13824 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 22:20:47.615  INFO 13824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-04-16 22:20:47.623  INFO 13824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 22:20:47.623  INFO 13824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 22:20:47.624  INFO 13824 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 22:20:47.625  INFO 13824 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 22:20:47.625  INFO 13824 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 22:20:47.631  INFO 13824 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 22:20:47.728  INFO 13824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 22:20:47.729  INFO 13824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1403 ms
+2021-04-16 22:20:49.146  INFO 13824 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 22:20:49.227  INFO 13824 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 22:20:49.283  INFO 13824 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 22:20:50.659  INFO 13824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-04-16 22:20:50.660  INFO 13824 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 22:20:50.683  INFO 13824 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 22:20:50.717  INFO 13824 --- [http-nio-127.0.0.1-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 22:20:50.717  INFO 13824 --- [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 22:20:50.718  INFO 13824 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 22:20:50.719  INFO 13824 --- [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-16 22:20:50.927  INFO 13824 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 22:20:50.930  INFO 13824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 22:20:50.933  INFO 13824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 22:20:50.935  INFO 13824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 22:20:50.936  INFO 13824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-16 22:20:50.937  INFO 13824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 22:20:50.938  INFO 13824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 22:20:50.939  INFO 13824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-04-16 22:20:50.941  INFO 13824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-16 22:20:50.953  INFO 13824 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 5.435 seconds (JVM running for 6.866)
+2021-04-16 22:21:13.476  INFO 25264 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 25264 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 22:21:13.479  INFO 25264 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 22:21:14.492  WARN 25264 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 22:21:14.831  INFO 25264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-04-16 22:21:14.842  INFO 25264 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 22:21:14.842  INFO 25264 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 22:21:14.843  INFO 25264 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 22:21:14.844  INFO 25264 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 22:21:14.844  INFO 25264 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 22:21:14.847  INFO 25264 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 22:21:14.946  INFO 25264 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 22:21:14.946  INFO 25264 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1417 ms
+2021-04-16 22:21:16.302  INFO 25264 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 22:21:16.384  INFO 25264 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 22:21:16.442  INFO 25264 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 22:21:17.824  INFO 25264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-04-16 22:21:17.826  INFO 25264 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 22:21:17.843  INFO 25264 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 22:21:17.877  INFO 25264 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 22:21:18.003  INFO 25264 --- [http-nio-127.0.0.1-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 22:21:18.003  INFO 25264 --- [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 22:21:18.005  INFO 25264 --- [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-16 22:21:18.098  INFO 25264 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 22:21:18.100  INFO 25264 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 22:21:18.102  INFO 25264 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 22:21:18.103  INFO 25264 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 22:21:18.104  INFO 25264 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-16 22:21:18.104  INFO 25264 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 22:21:18.105  INFO 25264 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 22:21:18.109  INFO 25264 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-04-16 22:21:18.111  INFO 25264 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-16 22:21:18.120  INFO 25264 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 5.323 seconds (JVM running for 6.672)
+2021-04-16 22:28:10.639  INFO 26316 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 26316 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-16 22:28:10.648  INFO 26316 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-16 22:28:12.198  WARN 26316 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.blog]' package. Please check your configuration.
+2021-04-16 22:28:12.564  INFO 26316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-04-16 22:28:12.573  INFO 26316 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 22:28:12.574  INFO 26316 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-16 22:28:12.575  INFO 26316 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-16 22:28:12.575  INFO 26316 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-16 22:28:12.576  INFO 26316 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-16 22:28:12.579  INFO 26316 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-16 22:28:12.677  INFO 26316 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 22:28:12.678  INFO 26316 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1965 ms
+2021-04-16 22:28:14.209  INFO 26316 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-16 22:28:14.290  INFO 26316 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 22:28:14.343  INFO 26316 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-16 22:28:15.636  INFO 26316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-04-16 22:28:15.638  INFO 26316 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-16 22:28:15.655  INFO 26316 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-16 22:28:15.688  INFO 26316 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 22:28:15.877  INFO 26316 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-16 22:28:15.879  INFO 26316 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-16 22:28:15.882  INFO 26316 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-16 22:28:15.883  INFO 26316 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: blogListUsingGET_1
+2021-04-16 22:28:15.884  INFO 26316 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-16 22:28:15.885  INFO 26316 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-16 22:28:15.886  INFO 26316 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-16 22:28:15.887  INFO 26316 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-16 22:28:15.889  INFO 26316 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2021-04-16 22:28:15.892  INFO 26316 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-16 22:28:15.902  INFO 26316 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 6.307 seconds (JVM running for 7.763)
+2021-04-16 22:28:17.373  INFO 26316 --- [http-nio-127.0.0.1-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 22:28:17.374  INFO 26316 --- [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 22:28:17.378  INFO 26316 --- [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms

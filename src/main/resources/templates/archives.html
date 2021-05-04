@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<!--引入公共head-->
+<head th:replace="_fragments::head(~{::title})">
+    <meta charset="UTF-8">
+    <title>崇明鸟|归档</title>
+</head>
+<body class="body-me">
+<!--引入公共头部导航栏-->
+<nav th:replace="_fragments::nav"></nav>
+<!--中间内容-->
+<div class="m-padded-top-big ui container">
+    <div class="m-container">
+        <div class="ui stacked segment" th:each="blog:${blogList}">
+            <a class="m-link" th:href="'/blog/'+${blog.id}" th:text="${blog.title}">HashMap为什么是线程不安全的？</a>
+            <div class="meta">
+                <i class="eye icon m-i-color"></i><span th:text="${blog.views}"></span>
+                <i class="calendar plus outline icon m-i-color"></i><span th:text="${#dates.format(blog.updateDate,'yyyy-MM-dd')}"></span>
+                <i class="folder icon m-i-color"></i><span th:text="${blog.category}"></span>
+            </div>
+        </div>
+    </div>
+    <!--分页按钮-->
+    <div class="ui container column center aligned m-padded-tb">
+        <a class="circular ui basic icon button"
+           th:style="${pn}-1<1?'display: none':''"
+           th:href="@{/archives?pn={pn}(pn=${pn}-1)}">
+            <i class="icon angle left"></i>
+        </a>
+        <a class="circular ui basic icon button"
+           th:text="${pn}-1"
+           th:style="${pn}-1<1?'display: none':''"
+           th:href="@{/archives?pn={pn}(pn=${pn}-1)}">
+        </a>
+        <a class="circular ui icon button"
+           th:text="${pn}"
+           th:href="@{/archives?pn={pn}(pn=${pn})}">
+        </a>
+        <a class="circular ui basic icon button"
+           th:text="${pn}+1"
+           th:style="${pn}+1>${pages}?'display: none':''"
+           th:href="@{/archives?pn={pn}(pn=${pn}+1)}">
+        </a>
+        <a class="circular ui basic icon button"
+           th:style="${pn}+1>${pages}?'display: none':''"
+           th:href="@{/archives?pn={pn}(pn=${pn}+1)}">
+            <i class="icon angle right"></i>
+        </a>
+    </div>
+</div>
+<!--引入公共底部内容-->
+<footer th:replace="_fragments::footer"></footer>
+<!--引入公共JavaScript-->
+<!--/*/<th:block th:replace="_fragments::script">/*/-->
+<!--/*/</th:block>/*/-->
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<!--引入公共head-->
+<head th:replace="_fragments::head(~{::title})">
+    <meta charset="UTF-8">
+    <title>崇明鸟|分类</title>
+</head>
+<body class="body-me">
+<!--引入公共头部导航栏-->
+<nav th:replace="_fragments::nav"></nav>
+<!--中间内容-->
+<div class="m-padded-top-big">
+    <!--中间文章卡片列表3*3-->
+    <div class="ui link cards container three column doubling stackable grid">
+        <div class="column" th:each="category : ${categoryList}">
+            <div class="ui card centered" style="width: 89% !important;">
+                <div class="ui fluid image">
+                    <a class="ui left corner label" th:style="${category.recommend}?'':'display: none'">
+                        <i class="heart red icon"></i>
+                    </a>
+                    <img src="../static/images/blog-test.jpg" th:src="${category.img}">
+                </div>
+                <div class="content">
+                    <a class="header" th:text="${category.name}" th:href="@{/index?category={category}(category=${category.id})}"></a>
+                </div>
+                <div class="extra content">
+                    <span class="right floated"><i class="folder icon m-i-color"></i><span th:text="${category.num}"></span></span>
+                    <span ><i class="calendar plus outline icon m-i-color"></i><span th:text="${#dates.format(category.updateDate,'yyyy-MM-dd')}"></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--分页按钮-->
+    <div class="ui container column center aligned m-padded-tb">
+        <a class="circular ui basic icon button"
+           th:style="${pn}-1<1?'display: none':''"
+           th:href="@{/categories?pn={pn}(pn=${pn}-1)}">
+            <i class="icon angle left"></i>
+        </a>
+        <a class="circular ui basic icon button"
+           th:text="${pn}-1"
+           th:style="${pn}-1<1?'display: none':''"
+           th:href="@{/categories?pn={pn}(pn=${pn}-1)}">
+        </a>
+        <a class="circular ui icon button"
+           th:text="${pn}"
+           th:href="@{/categories?pn={pn}(pn=${pn})}">
+        </a>
+        <a class="circular ui basic icon button"
+           th:text="${pn}+1"
+           th:style="${pn}+1>${pages}?'display: none':''"
+           th:href="@{/categories?pn={pn}(pn=${pn}+1)}">
+        </a>
+        <a class="circular ui basic icon button"
+           th:style="${pn}+1>${pages}?'display: none':''"
+           th:href="@{/categories?pn={pn}(pn=${pn}+1)}">
+            <i class="icon angle right"></i>
+        </a>
+    </div>
+</div>
+<!--引入公共底部内容-->
+<footer th:replace="_fragments::footer"></footer>
+<!--引入公共JavaScript-->
+<!--/*/<th:block th:replace="_fragments::script">/*/-->
+<!--/*/</th:block>/*/-->
+</body>
+</html>

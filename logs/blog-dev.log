@@ -1,0 +1,73 @@
+2021-04-25 13:05:36.677  INFO 3760 --- [main] com.blog.BlogApplication                 : Starting BlogApplication using Java 1.8.0_131 on DESKTOP-JL7G6PR with PID 3760 (E:\mhw\mycode2021\blog\target\classes started by 11324 in E:\mhw\mycode2021\blog)
+2021-04-25 13:05:36.685  INFO 3760 --- [main] com.blog.BlogApplication                 : The following profiles are active: dev
+2021-04-25 13:05:39.637  INFO 3760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-04-25 13:05:39.647  INFO 3760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-25 13:05:39.647  INFO 3760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-25 13:05:39.647  INFO 3760 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-25 13:05:39.647  INFO 3760 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-25 13:05:39.647  INFO 3760 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-25 13:05:39.759  INFO 3760 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-25 13:05:39.961  INFO 3760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-25 13:05:39.961  INFO 3760 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3212 ms
+2021-04-25 13:05:44.418  INFO 3760 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-25 13:05:44.492  INFO 3760 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-25 13:05:44.592  INFO 3760 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-25 13:05:44.983  INFO 3760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-04-25 13:05:44.983  INFO 3760 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-04-25 13:05:45.004  INFO 3760 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2021-04-25 13:05:45.037  INFO 3760 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-25 13:05:45.203  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.213  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.213  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.213  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.223  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.223  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.223  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
+2021-04-25 13:05:45.233  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.233  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.243  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.253  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.253  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.273  INFO 3760 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-04-25 13:05:45.273  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: aboutUsingGET_1
+2021-04-25 13:05:45.273  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addBlogUsingPOST_1
+2021-04-25 13:05:45.273  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.273  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: archivesUsingGET_1
+2021-04-25 13:05:45.273  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.283  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: blogUsingGET_1
+2021-04-25 13:05:45.283  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.283  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: blogListUsingGET_1
+2021-04-25 13:05:45.283  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteBlogUsingPOST_1
+2021-04-25 13:05:45.283  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.283  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editorUsingGET_1
+2021-04-25 13:05:45.283  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByTextUsingGET_1
+2021-04-25 13:05:45.293  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.293  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_2
+2021-04-25 13:05:45.293  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.293  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_3
+2021-04-25 13:05:45.293  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addCategoryUsingPOST_1
+2021-04-25 13:05:45.293  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.293  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoriesUsingGET_1
+2021-04-25 13:05:45.293  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.303  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: categoryListUsingGET_1
+2021-04-25 13:05:45.303  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteCategoryUsingPOST_1
+2021-04-25 13:05:45.303  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateCategoryUsingPOST_1
+2021-04-25 13:05:45.303  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addCommentUsingPOST_1
+2021-04-25 13:05:45.303  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.303  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: commentUsingGET_1
+2021-04-25 13:05:45.313  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addFriendUsingPOST_1
+2021-04-25 13:05:45.313  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteFriendUsingPOST_1
+2021-04-25 13:05:45.313  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.313  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsUsingGET_1
+2021-04-25 13:05:45.313  WARN 3760 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType org.springframework.ui.ModelMap
+2021-04-25 13:05:45.313  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: friendsListUsingGET_1
+2021-04-25 13:05:45.313  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateFriendUsingPOST_1
+2021-04-25 13:05:45.313  INFO 3760 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadBlogUsingPOST_1
+2021-04-25 13:05:45.323  INFO 3760 --- [main] com.blog.BlogApplication                 : Started BlogApplication in 10.55 seconds (JVM running for 13.459)
+2021-04-25 13:05:53.469  INFO 3760 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-25 13:05:53.469  INFO 3760 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-25 13:05:53.470  INFO 3760 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-25 13:05:54.751  INFO 3760 --- [http-nio-8081-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-04-25 13:06:54.561  INFO 3760 --- [http-nio-8081-exec-7] c.b.config.handler.MyMetaObjectHandler   : start insert fill ....
+2021-04-25 13:07:42.234  INFO 3760 --- [http-nio-8081-exec-3] c.b.config.handler.MyMetaObjectHandler   : start insert fill ....
+2021-04-25 13:07:52.024  INFO 3760 --- [http-nio-8081-exec-10] c.b.config.handler.MyMetaObjectHandler   : start insert fill ....
